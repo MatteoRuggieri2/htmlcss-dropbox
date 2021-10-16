@@ -41,8 +41,16 @@ ul{
     clear: both;
 }
 
+.col-30{
+    width: 30%;
+}
+
 .col-50{
     width: 50%;
+}
+
+.col-70{
+    width: 70%;
 }
 
 /*Button*/
@@ -52,9 +60,13 @@ ul{
 }
 
 .btn-small{
-    margin: 20px;
     padding: 5px 20px;
     font-size: 14px;
+}
+
+.btn-medium{
+    padding: 10px 20px;
+    font-size: 18px;
 }
 
 .bkg-blue{
@@ -65,18 +77,18 @@ ul{
 /*HEADER*/
 nav{
     width: 100%;
-    height: 80px;
-    background-color: aqua;
+    height: 83px;
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
+    border-bottom: 1px solid #d7d7da;
 }
 
 .logo-container{
     height: 80px;
     display: inline-block;
     margin: 0 20px;
-    line-height: 80px;
 }
 
 .logo-container img{
@@ -90,13 +102,12 @@ nav li{
 }
 
 nav li:hover{
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 nav a{
     color: black;
     font-size: 18px;
-    vertical-align: middle;
     display: block;
 }
 
@@ -104,22 +115,50 @@ nav div:last-child{
     text-align: right;
 }
 
-/*Test fixed nav*/
-.box-red{
-    width: 400px;
-    height: 400px;
-    background-color: red;
+nav a.btn-small{
+    margin: 20px;
+}
+
+/*MAIN*/
+.jumbotron{
+    width: 100%;
     margin-top: 80px;
+    background-color: #b4d0e7;
 }
 
-.box-green{
-    width: 400px;
-    height: 400px;
-    background-color: green;
+.jumbotron-container{
+    width: 80%;
+    margin: auto;
+    padding: 100px 0;
 }
 
-.box-blue{
-    width: 400px;
-    height: 400px;
-    background-color: blue;
+.jumbotron h3{
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+
+.jumbotron p{
+    width: 80%;
+    font-size: 18px;
+}
+
+.jumbotron .btn-medium{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.jumbotron .arrow-down{
+    display: inline-block;
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+.jumbo-img-container{
+    position: relative;
+}
+
+.jumbotron img{
+    position: absolute;
+    top: 0px;
+    left: 0;
 }
