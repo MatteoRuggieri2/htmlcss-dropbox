@@ -262,9 +262,9 @@ nav a.btn-small{
 /*Subscription columns*/
 .subscription-col{
     border: 1px solid #d0d0d3;
-    height: 1000px;
     margin-top: 40px;
     margin-bottom: 30px;
+    min-height: 1000px;
 }
 
 .user{
@@ -355,12 +355,107 @@ nav a.btn-small{
     margin: 150px 0 120px;
 }
 
-/*Text column*/
+/*Text column - partner-section*/
 section.partner-section div.col-50:last-child{
     padding: 50px;
 }
 
 /*Section 3 - Dropbox Buisiness*/
 .buisiness-section .col-30{
-    padding: 25px;
+    padding-right: 50px;
+}
+
+/*Section 4 - Team Dropbox Buisiness*/
+.team-section h2{
+    width: 55%;
+}
+
+.team-section a{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+/*Text column*/
+.col-text{
+    width: calc( 100% - 1000px );
+    height: 500px;
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+.col-text img{
+    width: 200px;
+}
+
+/*Team columns*/
+.col-team{
+    width: 500px;
+    height: 500px;
+}
+
+.team{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.team img{
+    width: 60%;
+    filter: invert(1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+}
+
+/*Pseudo element - grey row*/
+.team img::after{
+    display: block;
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    margin: 30px 0;
+    cursor: default;
+}
+
+/*Team logo*/
+#team-designit{
+    background-color: #a2d39b;
+    border: 10px solid #d0e9cd;
+}
+
+#team-asu{
+    background-color: #61082b;
+
+}
+
+#team-uf{
+    background-color: #0093ce;
+    
+}
+
+#team-topps{
+    background-color: #ff1c1c;
+    
+}
+
+#team-wbr{
+    background-color: #d5001f;
+    
+}
+
+#team-hearst{
+    background-color: #b4d0e7;
+    
+}
+
+#team-lonely{
+    background-color: #0d2481;
+    
+}
+
+#team-clear{
+    background-color: #ffd830;
+    
 }
