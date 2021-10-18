@@ -102,6 +102,7 @@ a.btn{
     background-color: white;
     color: black;
     border: 1px solid black;
+    font-size: 15px;
 }
 
 /*Icon*/
@@ -175,7 +176,7 @@ nav a.btn-small{
 .jumbotron{
     width: 100%;
     margin-top: 80px;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
     background-color: #b4d0e7;
 }
 
@@ -217,7 +218,10 @@ nav a.btn-small{
     left: 0;
 }
 
-/* Section 1 */
+/* Section 1 - Subscription */
+.subscription-section{
+    margin: 180px 0;
+}
 
 /*Input radio*/
 .input-radio{
@@ -299,7 +303,7 @@ nav a.btn-small{
     margin: 30px 0;
 }
 
-/*Pseudo element - row*/
+/*Pseudo element - grey row*/
 .buy::after{
     display: block;
     content: "";
@@ -310,6 +314,7 @@ nav a.btn-small{
     cursor: default;
 }
 
+/*Enterprise container*/
 .enterprise-container{
     width: 100%;
     border: 1px solid #d0d0d3;
@@ -337,12 +342,20 @@ nav a.btn-small{
     margin-bottom: 40px;
 }
 
-section.partner div.col-50:last-child{
-    padding: 40px;
+/*Section 2 - Partner Dropbox*/
+.partner-section{
+    margin: 150px 0;
 }
 
-/* .box{
-    width: 200px;
-    height: 300px;
-    background-color: aqua;
-} */
+/*Text column*/
+section.partner-section div.col-50:last-child{
+    padding: 50px;
+}
+
+.partner-section h2.section-subtitle{
+    margin-bottom: 20px;
+}
+
+.partner-section p{
+    margin: 20px 0;
+}
