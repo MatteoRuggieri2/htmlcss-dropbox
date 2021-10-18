@@ -491,3 +491,25 @@ section.partner-section div.col-50:last-child{
     top: 0;
     right: 0;
 }
+
+/*Section 5 - FAQ section*/
+.faq-section{
+    margin: 150px 0;
+}
+
+.faq-section li{
+    display: inline-block;
+    width: 100%;
+    padding-right: 40px;
+    line-height: 100px;
+    border-bottom: 1px solid #d0d0d3;
+    font-weight: bold;
+}
+
+.faq-section li:first-child{
+    border-top: 1px solid #d0d0d3;
+}
+
+li .angledown-icon{
+    float: right;
+}
