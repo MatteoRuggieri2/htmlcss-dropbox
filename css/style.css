@@ -71,6 +71,7 @@ a.btn{
 .btn {
     display: inline-block;
     line-height: normal;
+    text-align: center;
 }
 
 .btn-small{
@@ -111,6 +112,10 @@ a.btn{
 }
 
 /*Text*/
+p{
+    margin: 20px 0;
+}
+
 .bold{
     font-weight: bold;
 }
@@ -121,8 +126,10 @@ a.btn{
 }
 
 .section-subtitle{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
+    line-height: 35px;
+    margin-bottom: 20px;
 }
 
 /*HEADER*/
@@ -301,6 +308,7 @@ nav a.btn-small{
 
 .subscription a.btn-large{
     margin: 30px 0;
+    width: 100%;
 }
 
 /*Pseudo element - grey row*/
@@ -344,7 +352,7 @@ nav a.btn-small{
 
 /*Section 2 - Partner Dropbox*/
 .partner-section{
-    margin: 150px 0;
+    margin: 150px 0 120px;
 }
 
 /*Text column*/
@@ -352,10 +360,7 @@ section.partner-section div.col-50:last-child{
     padding: 50px;
 }
 
-.partner-section h2.section-subtitle{
-    margin-bottom: 20px;
-}
-
-.partner-section p{
-    margin: 20px 0;
+/*Section 3 - Dropbox Buisiness*/
+.buisiness-section .col-30{
+    padding: 25px;
 }
