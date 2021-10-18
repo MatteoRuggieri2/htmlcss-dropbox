@@ -102,7 +102,6 @@ a.btn{
 .bkg-white{
     background-color: white;
     color: black;
-    border: 1px solid black;
     font-size: 15px;
 }
 
@@ -355,6 +354,10 @@ nav a.btn-small{
     margin: 150px 0 120px;
 }
 
+.partner-section .btn{
+    border: 1px solid black;
+}
+
 /*Text column - partner-section*/
 section.partner-section div.col-50:last-child{
     padding: 50px;
@@ -366,6 +369,10 @@ section.partner-section div.col-50:last-child{
 }
 
 /*Section 4 - Team Dropbox Buisiness*/
+.team-section{
+    margin: 200px 0;
+}
+
 .team-section h2{
     width: 55%;
 }
@@ -409,14 +416,19 @@ section.partner-section div.col-50:last-child{
 }
 
 /*Pseudo element - grey row*/
-.team img::after{
+.logo-col-text::after{
     display: block;
     content: "";
-    width: 50px;
-    height: 1px;
-    background-color: black;
-    margin: 30px 0;
+    width: 60px;
+    height: 2px;
+    background-color: #e1e1e2;
+    margin: 30px 0 50px;
     cursor: default;
+}
+
+.col-text span{
+    display: inline-block;
+    margin: 40px 0;
 }
 
 /*Team logo*/
@@ -458,4 +470,24 @@ section.partner-section div.col-50:last-child{
 #team-clear{
     background-color: #ffd830;
     
+}
+
+.team-section > div:last-child{
+    background-color: #b4d0e7;
+    padding: 100px 0;
+}
+
+/*2nd title - team-section*/
+.team-section > div:last-child h2{
+    color: #61082b;
+}
+
+.team-section > div:last-child div.container{
+    position: relative;
+}
+
+.team-section > div:last-child a{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
