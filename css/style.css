@@ -15,6 +15,11 @@ body{
     margin: auto;
 }
 
+.wide-container{
+    width: 80%;
+    margin: auto;
+}
+
 img{
     width: 100%;
 }
@@ -45,6 +50,11 @@ ul{
 
 .col-5{
     width: 5%;
+}
+
+.col-20{
+    width: 20%;
+
 }
 
 .col-30{
@@ -143,6 +153,8 @@ nav{
     z-index: 1;
 }
 
+/*devo mettere l'img dentro una li e dare middle agli li*/
+
 .logo-container{
     height: 80px;
     display: inline-block;
@@ -157,16 +169,20 @@ nav li{
     display: inline-block;
     margin: 0 20px;
     line-height: 80px;
+
+    /*test*/
+    vertical-align: middle;
+
 }
 
-nav li:hover{
+nav li:hover {
     border-bottom: 3px solid black;
 }
 
 nav a{
     color: black;
     font-size: 18px;
-    display: block;
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -512,4 +528,54 @@ section.partner-section div.col-50:last-child{
 
 li .angledown-icon{
     float: right;
+}
+
+/*FOOTER*/
+footer{
+    background-color: black;
+}
+
+footer .col-20{
+    padding: 100px 0;
+}
+
+footer h4{
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+footer li{
+    line-height: 30px;
+}
+
+footer li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Pseudo element - grey row*/
+footer .clearfix::after{
+    display: block;
+    content: "";
+    width: 120px;
+    height: 1px;
+    background-color: #999999;
+    /* margin: 30px 0 50px; */
+    cursor: default;
+}
+
+.language{
+    padding: 50px 0;
+    color: #999999;
+}
+
+.language a{
+    color: #999999;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.language .arrowup-icon{
+    vertical-align: middle;
 }
