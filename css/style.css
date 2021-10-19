@@ -370,6 +370,7 @@ nav a.btn-small{
 .subscription a.btn-large{
     margin: 30px 0;
     width: 100%;
+    font-size: 16px;
 }
 
 /*Pseudo element - grey row*/
