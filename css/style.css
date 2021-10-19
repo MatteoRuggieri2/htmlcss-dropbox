@@ -171,7 +171,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 5;
 }
 
 .logo-container{
@@ -479,6 +479,13 @@ section.partner-section div.col-50:last-child{
     width: 250px;
     height: 250px;
     position: relative;
+    transition: transform 0.5s;
+}
+
+ .team:hover{
+    transform: scale(1.02);
+    border-radius: 5px;
+    z-index: 1;
 }
 
 .team img{
