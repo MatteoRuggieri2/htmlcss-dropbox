@@ -160,16 +160,13 @@ nav{
 }
 
 .logo-container img{
-    vertical-align: middle;
+    vertical-align: text-bottom;
 }
 
 nav li{
     display: inline-block;
     margin: 0 20px;
     line-height: 80px;
-
-    /*test*/
-    vertical-align: middle;
 
 }
 
