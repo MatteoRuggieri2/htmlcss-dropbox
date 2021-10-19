@@ -8,6 +8,7 @@
 /*COMMON*/
 body{
     font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
 }
 
 .container{
@@ -22,6 +23,10 @@ body{
 
 img{
     width: 100%;
+}
+
+a{
+    color: #0564ff;
 }
 
 /*Lists*/
@@ -48,13 +53,8 @@ ul{
     margin: 0 5%;
 }
 
-.col-5{
-    width: 5%;
-}
-
 .col-20{
     width: 20%;
-
 }
 
 .col-30{
@@ -69,10 +69,6 @@ ul{
     width: 70%;
 }
 
-.col-95{
-    width: 95%;
-}
-
 /*Button*/
 a.btn{
     text-decoration: none;
@@ -85,13 +81,13 @@ a.btn{
 }
 
 .btn-small{
-    padding: 5px 20px;
+    padding: 7px 20px;
     font-size: 14px;
 }
 
 .btn-medium{
     padding: 7px 20px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .btn-large{
@@ -109,10 +105,18 @@ a.btn{
     color: white;
 }
 
+.bkg-blue:hover{
+    background-color: #3c84ff;
+    color: white;
+}
+
 .bkg-white{
     background-color: white;
     color: black;
-    font-size: 15px;
+}
+
+.bkg-white:hover{
+    background-color: #f0f0f0;
 }
 
 /*Icon*/
@@ -120,13 +124,17 @@ a.btn{
     font-size: 20px;
 }
 
-/*Text*/
-p{
-    margin: 20px 0;
+.check-icon{
+    color: #0564ff;
 }
 
-.bold{
-    font-weight: bold;
+/*Text*/
+.underline{
+    text-decoration: underline;
+}
+
+p{
+    margin: 20px 0;
 }
 
 .section-title{
@@ -144,7 +152,7 @@ p{
 /*HEADER*/
 nav{
     width: 100%;
-    height: 83px;
+    height: 80px;
     background-color: white;
     border-bottom: 1px solid #d7d7da;
     position: fixed;
@@ -166,17 +174,17 @@ nav{
 nav li{
     display: inline-block;
     margin: 0 20px;
-    line-height: 80px;
+    line-height: 77px;
 
 }
 
 nav li:hover {
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
 }
 
 nav a{
     color: black;
-    font-size: 18px;
+    font-size: 17px;
     display: inline-block;
     text-decoration: none;
 }
@@ -216,6 +224,7 @@ nav a.btn-small{
 .jumbotron .btn-medium{
     margin-top: 30px;
     margin-bottom: 10px;
+    padding: 10px 20px;
 }
 
 .jumbotron .arrow-down{
@@ -257,7 +266,7 @@ nav a.btn-small{
 }
 
 .select-radio{
-    border: 5px solid blue;
+    border: 5px solid #0061ff;
 }
 
 .deselect-radio{
@@ -300,20 +309,23 @@ nav a.btn-small{
 .price{
     display: inline-block;
     margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .subscription-time{
     display: block;
-    color: grey;
+    color: #788692;
+    margin-bottom: 50px;
 }
 
 .subscription-container ul li{
     margin: 20px 0;
+    padding: 0 20px;
 }
 
-.col-95 span{
-    display: inline-block;
-    margin-left: 7px;
+.subscription-container li span:first-child{
+    margin-left: -20px;
 }
 
 .subscription a.btn-large{
@@ -330,6 +342,10 @@ nav a.btn-small{
     background-color: #d0d0d3;
     margin: 30px 0;
     cursor: default;
+}
+
+.subscription .list-title{
+    font-weight: bold;
 }
 
 /*Enterprise container*/
@@ -353,11 +369,14 @@ nav a.btn-small{
     position: absolute;
     top: 35px;
     right: 35px;
+    font-size: 16px;
 }
 
-.enterprise-container span.bold{
+.enterprise-container div:last-child span{
     display: block;
     margin-bottom: 40px;
+    font-size: 19px;
+    font-weight: 800;
 }
 
 /*Section 2 - Partner Dropbox*/
@@ -365,8 +384,13 @@ nav a.btn-small{
     margin: 150px 0 120px;
 }
 
+.partner-section p{
+    line-height: 30px;
+}
+
 .partner-section .btn{
     border: 1px solid black;
+    font-size: 18px;
 }
 
 /*Text column - partner-section*/
@@ -386,6 +410,7 @@ section.partner-section div.col-50:last-child{
 
 .team-section h2{
     width: 55%;
+    margin-bottom: 30px;
 }
 
 .team-section a{
@@ -511,10 +536,10 @@ section.partner-section div.col-50:last-child{
 .faq-section li{
     display: inline-block;
     width: 100%;
-    padding-right: 40px;
-    line-height: 100px;
+    padding: 40px 40px 40px 0;
     border-bottom: 1px solid #d0d0d3;
     font-weight: bold;
+    position: relative;
 }
 
 .faq-section li:first-child{
@@ -522,7 +547,10 @@ section.partner-section div.col-50:last-child{
 }
 
 li .angledown-icon{
-    float: right;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translate( -50%, -50% );
 }
 
 /*FOOTER*/
@@ -571,6 +599,11 @@ footer .clearfix::after{
     font-size: 14px;
 }
 
+footer .col-20 a:hover{
+    text-decoration: underline;
+}
+
 .language .arrowup-icon{
     vertical-align: middle;
+    cursor: pointer;
 }
